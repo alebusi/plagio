@@ -44,7 +44,7 @@ function generaTesto() {
   if (document.getElementById("accenti").checked == true) {
      testo=sistemaTesto(testo);
   }
-  document.getElementById("testo").value = testo;
+  document.getElementById("testo").innerHTML = testo;
 }
 
 function generaSequenza() {
