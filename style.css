@@ -26,6 +26,7 @@ input {
     top: 5%;
     left: 60%;
     width: 35%;
+    height: 80vh;
     position: absolute;
 }
 #istruzioni {
