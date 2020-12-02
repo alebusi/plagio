@@ -41,13 +41,10 @@ function generaTesto() {
     testo=testo+"Sette: "+document.getElementById(sequenza[6]).value+"...<br>";
   }
   testo=testo+"Ora tocca a voi dare la risposta corretta!";
-  /*
   if (document.getElementById("accenti").checked == true) {
      testo=sistemaTesto(testo);
   }
-  */
-       testo=sistemaTesto(testo);
-  document.getElementById("testo").innerHTML = testo;
+  document.getElementById("testo").value = testo;
 }
 
 function generaSequenza() {
