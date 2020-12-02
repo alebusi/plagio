@@ -19,6 +19,10 @@ label {
 input {
     width: 78%;
 }
+#accenti {
+  width: 2%;   
+}
+
 #autore, #risp1 {
   margin-bottom: 30px;
 } 
