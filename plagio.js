@@ -45,6 +45,16 @@ function randomIntFromInterval(min,max) {
     return Math.floor(Math.random()*(max-min+1)+min);
 }
 
+function onoff(div) {
+  var className = div.getAttribute("class");
+  if (className=="abilita") {
+     div.className = "disabilita";
+  }
+  else {
+     div.className = "abilita";
+  }
+}
+
 function sistemaTesto(testo) {
   testo = testo.replace(/à/ig,"ah");
   testo = testo.replace(/ì/ig,"ih");
