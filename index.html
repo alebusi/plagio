@@ -9,23 +9,30 @@
     <label for="titolo">Titolo</label>
     <input type="text" id="titolo" name="titolo"><br><br>
     <label for="autore">Autore</label>
-    <input type="text" id="autore" name="autore"><br><br>
+    <input type="text" id="autore" name="autore"><br>
     <label for="incipit">Incipit</label>
     <input type="text" id="incipit" name="incipit"><br><br>
-    <label for="risp1">Corretta</label>
+    <label for="risp0">Corretta</label>
+    <input type="text" id="risp0" name="risp0"><br><br>
+    <label for="risp1">Risposta 1</label>
     <input type="text" id="risp1" name="risp1"><br><br>
-    <label for="risp2">Risposta 1</label>
+    <label for="risp2">Risposta 2</label>
     <input type="text" id="risp2" name="risp2"><br><br>
-    <label for="risp3">Risposta 2</label>
+    <label for="risp3">Risposta 3</label>
     <input type="text" id="risp3" name="risp3"><br><br>
-    <label for="risp4">Risposta 3</label>
+    <label for="risp4">Risposta 4</label>
     <input type="text" id="risp4" name="risp4"><br><br>
-    <label for="risp5">Risposta 4</label>
+    <label for="risp5">Risposta 5</label>
     <input type="text" id="risp5" name="risp5"><br><br>
-    <label for="risp6">Risposta 5</label>
+    <label for="risp6">Risposta 6</label>
     <input type="text" id="risp6" name="risp6"><br><br>
-    <label for="risp7">Risposta 6</label>
+    <label for="risp7">Risposta 7</label>
     <input type="text" id="risp7" name="risp7"><br><br>
+    <label for="risp8">Risposta 8</label>
+    <input type="text" id="risp8" name="risp8">
+</form>
+<div id="giocatori"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQrhgONGzoB2vE8p6CnC3CM9qEY0jEV_zCfYSMq3L4oM5lT-Ba8o61Z-xRdkEKIudVdy76VKE4dnDis/pubhtml?gid=0&amp;single=true&amp;widget=false&amp;headers=false&amp;chrome=false&amp;range=a1:a8" width="120px" height="360px"></iframe></div>
+<div id="istruzioni">
     <label for="accenti">Per Alexa</label>
     <input type="checkbox" id="accenti" name="accenti">
     <button type="button" onclick="generaTesto()">Genera testo</button>
@@ -35,8 +42,7 @@
         <li>Verifica l'aggiornamento Alexa a <a href="https://docs.google.com/document/d/e/2PACX-1vTYZ7j14zvmea0tzkWS8wdm54-6gxHFMuATwkWe7xBjW_KvD8zOrKGVpErNOLbkV4d5jEzphBLLWT-u/pub" target="_blank">questo link</a></li>
         </ol>
     </div>
-  </form>
-  <div id="giocatori"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQrhgONGzoB2vE8p6CnC3CM9qEY0jEV_zCfYSMq3L4oM5lT-Ba8o61Z-xRdkEKIudVdy76VKE4dnDis/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false&amp;chrome=false&amp;range=a1:a6"></iframe></div>
+  </div>
   <div id="testo" contenteditable="true">Aspettando la generazione...</div>
   <script src="plagio.js"></script>
 </body>
