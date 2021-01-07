@@ -9,6 +9,7 @@ html, body {
 #giocatori {
     top: 240px;
     left: 5%;
+    position: absolute;
 }
 
 form {
