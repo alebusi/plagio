@@ -1,7 +1,7 @@
 ind = 0;
 
 function generaTesto() {
-  risposte = ["risp1","risp2","risp3","risp4"];
+  risposte = ["risp0"];
   sequenza = [];
   ind=0;
   generaSequenza(); 
@@ -48,14 +48,9 @@ function generaTesto() {
 }
 
 function generaSequenza() {
-  if (document.getElementById("risp5").value != "") {
-    risposte[4]="risp5";
-  }
-  if (document.getElementById("risp6").value != "") {
-    risposte[5]="risp6";
-  }
-  if (document.getElementById("risp7").value != "") {
-    risposte[6]="risp7";
+  for (var i = 1; i < 9; i++) {
+    if (document.getElementById("risp"+i).value != "") {
+       risposte[i]="risp1";
   }
   while (risposte.length > 0) {
     el = risposte.splice(randomIntFromInterval(0,risposte.length-1),1);
