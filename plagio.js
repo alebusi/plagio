@@ -12,14 +12,14 @@ function generaTesto() {
   testo=testo+"Ecco le proposte...<br>";
   txtIncipit=document.getElementById("incipit").value;
   for (x=0; x < sequenza.length; x++) {
-      testo=testo+x+": "+txtIncipit+" "+document.getElementById(sequenza[x]).value+"...<br>";
+      testo=testo+(x+1)+": "+txtIncipit+" "+document.getElementById(sequenza[x]).value+"...<br>";
   }
   testo=testo+"Ripetiamo per i meno attenti...<br>";
   testo=testo+document.getElementById("titolo").value+"...<br>";
   testo=testo+"di "+document.getElementById("autore").value+"...<br>";
   testo=testo+document.getElementById("incipit").value+"...<br>";
   for (x=0; x < sequenza.length; x++) {
-      testo=testo+x+": "+document.getElementById(sequenza[x]).value+"...<br>";
+      testo=testo+(x+1)+": "+document.getElementById(sequenza[x]).value+"...<br>";
   }
   testo=testo+"Ora tocca a voi dare la risposta corretta!";
   if (document.getElementById("accenti").checked == true) {
