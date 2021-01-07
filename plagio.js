@@ -48,9 +48,11 @@ function generaTesto() {
 }
 
 function generaSequenza() {
-  for (var i = 1; i < 9; i++) {
+  x=0;
+  for (i = 1; i < 9; i++) {
     if (document.getElementById("risp"+i).value != "") {
-       risposte[i]="risp"+i;
+      x++; 
+      risposte[x]="risp"+i;
     }
   }
   while (risposte.length > 0) {
