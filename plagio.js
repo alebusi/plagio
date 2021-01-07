@@ -1,12 +1,10 @@
 ind = 0;
-numlettere = ["uno","due","tre"];
 
 function generaTesto() {
   risposte = ["risp0"];
   sequenza = [];
   ind=0;
   generaSequenza(); 
-  ind=0;
   testo="Titolo del libro "+document.getElementById("titolo").value+"...<br>";
   testo=testo+"Autore "+document.getElementById("autore").value+"...<br>";
   testo=testo+"Ecco le proposte...<br>";
@@ -45,12 +43,6 @@ function generaSequenza() {
 
 function randomIntFromInterval(min,max) {
     return Math.floor(Math.random()*(max-min+1)+min);
-}
-
-function recRisp() {
-    txt=document.getElementById(sequenza[ind]).value;
-    ind=ind+1;
-    return txt;
 }
 
 function sistemaTesto(testo) {
