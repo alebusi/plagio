@@ -19,7 +19,7 @@ function generaTesto() {
   for (x=0; x < sequenza.length; x++) {
       testo=testo+(x+1)+": "+document.getElementById(sequenza[x]).value+"...<br>";
   }
-  testo=testo+"<br>Ora tocca a voi dare la risposta corretta!";
+  testo=testo+"Ora tocca a voi dare la risposta corretta!";
   if (document.getElementById("accenti").checked == true) {
      testo=sistemaTesto(testo);
   }
