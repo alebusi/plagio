@@ -12,6 +12,25 @@ html, body {
     position: absolute;
 }
 
+.container {
+    top: 210px;
+    left: 4%;
+    position: absolute;
+}
+
+.abilita {
+    width: 100px;
+    height: 40px;
+    opacity: 0;    
+}
+
+.disabilita {
+    width: 100px;
+    height: 40px;
+    opacity: 0.5;
+    background-color: white;
+}
+
 form {
     top: 40px;
     left: 5%;
