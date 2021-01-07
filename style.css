@@ -7,8 +7,8 @@ html, body {
 }
 
 #giocatori {
-    top: 180px;
-    /*left: 2%;*/
+    top: 210px;
+    left: 4%;
     position: absolute;
 }
 
