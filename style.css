@@ -5,8 +5,14 @@ html, body {
     font-family: Helvetica,Arial,Sanserif;
     background: white;
 }
+
+#giocatori {
+    top: 240px;
+    left: 5%;
+}
+
 form {
-    top: 5%;
+    top: 40px;
     left: 5%;
     width: 50%;
     position: absolute;
@@ -26,8 +32,9 @@ input {
 #autore, #risp1 {
   margin-bottom: 30px;
 } 
+
 #testo {
-    top: 5%;
+    top: 40px;
     left: 60%;
     width: 35%;
     height: 80vh;
