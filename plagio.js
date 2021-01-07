@@ -1,4 +1,5 @@
 ind = 0;
+numlettere = ["uno","due","tre"];
 
 function generaTesto() {
   risposte = ["risp0"];
@@ -10,35 +11,15 @@ function generaTesto() {
   testo=testo+"Autore "+document.getElementById("autore").value+"...<br>";
   testo=testo+"Ecco le proposte...<br>";
   txtIncipit=document.getElementById("incipit").value;
-  testo=testo+"Uno: "+txtIncipit+" "+recRisp()+"...<br>";
-  testo=testo+"Due: "+txtIncipit+" "+recRisp()+"...<br>";
-  testo=testo+"Tre: "+txtIncipit+" "+recRisp()+"...<br>";
-  testo=testo+"Quattro: "+txtIncipit+" "+recRisp()+"...<br>";
-  if (document.getElementById("risp5").value != "") {
-    testo=testo+"Cinque: "+txtIncipit+" "+recRisp()+"...<br>";
-  }
-  if (document.getElementById("risp6").value != "") {
-    testo=testo+"Sei: "+txtIncipit+" "+recRisp()+"...<br>";
-  }
-  if (document.getElementById("risp7").value != "") {
-    testo=testo+"Sette: "+txtIncipit+" "+recRisp()+"...<br>";
+  for (x=0; x < sequenza.length; x++) {
+      testo=testo+x+": "+txtIncipit+" "+document.getElementById(sequenza[x]).value+"...<br>";
   }
   testo=testo+"Ripetiamo per i meno attenti...<br>";
-  testo=testo+"Titolo del libro "+document.getElementById("titolo").value+"...<br>";
-  testo=testo+"Autore "+document.getElementById("autore").value+"...<br>";
+  testo=testo+document.getElementById("titolo").value+"...<br>";
+  testo=testo+"di "+document.getElementById("autore").value+"...<br>";
   testo=testo+document.getElementById("incipit").value+"...<br>";
-  testo=testo+"Uno: "+document.getElementById(sequenza[0]).value+"...<br>";
-  testo=testo+"Due: "+document.getElementById(sequenza[1]).value+"...<br>";
-  testo=testo+"Tre: "+document.getElementById(sequenza[2]).value+"...<br>";
-  testo=testo+"Quattro: "+document.getElementById(sequenza[3]).value+"...<br>";
-  if (document.getElementById("risp5").value != "") {
-    testo=testo+"Cinque: "+document.getElementById(sequenza[4]).value+"...<br>";
-  }
-  if (document.getElementById("risp6").value != "") {
-    testo=testo+"Sei: "+document.getElementById(sequenza[5]).value+"...<br>";
-  }
-  if (document.getElementById("risp7").value != "") {
-    testo=testo+"Sette: "+document.getElementById(sequenza[6]).value+"...<br>";
+  for (x=0; x < sequenza.length; x++) {
+      testo=testo+x+": "+document.getElementById(sequenza[x]).value+"...<br>";
   }
   testo=testo+"Ora tocca a voi dare la risposta corretta!";
   if (document.getElementById("accenti").checked == true) {
