@@ -50,7 +50,8 @@ function generaTesto() {
 function generaSequenza() {
   for (var i = 1; i < 9; i++) {
     if (document.getElementById("risp"+i).value != "") {
-       risposte[i]="risp1";
+       risposte[i]="risp"+i;
+    }
   }
   while (risposte.length > 0) {
     el = risposte.splice(randomIntFromInterval(0,risposte.length-1),1);
