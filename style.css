@@ -4,6 +4,7 @@ html, body {
     height: 100%;
     font-family: Helvetica,Arial,Sanserif;
     background: #243447;
+    color: white;
 }
 
 #giocatori {
