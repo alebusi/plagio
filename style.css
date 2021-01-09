@@ -3,7 +3,7 @@ html, body {
     padding: 0;
     height: 100%;
     font-family: Helvetica,Arial,Sanserif;
-    background: white;
+    background: #243447;
 }
 
 #giocatori {
@@ -27,8 +27,7 @@ html, body {
 .disabilita {
     width: 100px;
     height: 40px;
-    opacity: 0.8;
-    background-color: white;
+    color: #c51f5d;
 }
 
 form {
@@ -45,6 +44,7 @@ label {
 }
 input {
     width: 78%;
+    background-color: #141d26;
 }
 #accenti {
   width: 2%;   
