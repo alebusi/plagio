@@ -28,7 +28,8 @@ html, body {
 .disabilita {
     width: 85px;
     height: 40px;
-    color: #c51f5d;
+    opacity: 0.5;
+    background-color: #243447;
 }
 
 form {
