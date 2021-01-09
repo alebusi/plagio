@@ -9,24 +9,24 @@ html, body {
 
 #giocatori {
     top: 210px;
-    left: 4%;
+    left: 5%;
     position: absolute;
 }
 
 #container {
     top: 220px;
-    left: 4%;
+    left: 5%;
     position: absolute;
 }
 
 .abilita {
-    width: 100px;
+    width: 85x;
     height: 40px;
     opacity: 0;    
 }
 
 .disabilita {
-    width: 100px;
+    width: 85px;
     height: 40px;
     color: #c51f5d;
 }
