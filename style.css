@@ -68,3 +68,6 @@ input {
     left: 60%;
     position: absolute;
 }
+a {
+    color: orange;
+}
