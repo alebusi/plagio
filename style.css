@@ -76,3 +76,9 @@ input {
 a {
     color: orange;
 }
+iframe 
+{
+  width: 110px;
+  overflow-x:hidden;
+  overflow-Y:hidden;
+}
