@@ -17,6 +17,8 @@ html, body {
     top: 230px;
     left: 5%;
     position: absolute;
+    border-right: 25px solid #243447;
+    border-bottom: 25px solid #243447;
 }
 
 .abilita {
