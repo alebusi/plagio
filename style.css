@@ -7,27 +7,11 @@ html, body {
     color: white;
 }
 
-#giocatori {
-    top: 215px;
-    left: 5%;
-    position: absolute;
-}
-
-#container {
-    top: 230px;
-    left: 5%;
-    position: absolute;
-}
-
 .abilita {
-    width: 85px;
-    height: 40px;
-    opacity: 0;    
+  opacity: 0;
 }
 
 .disabilita {
-    width: 85px;
-    height: 40px;
     opacity: 0.7;
     background-color: #243447;
 }
@@ -73,13 +57,4 @@ input {
 }
 a {
     color: orange;
-}
-iframe 
-{
-  /*width: 110px;*/
-  overflow-x:hidden;
-  overflow-Y:hidden;
-}
-.grid-container {
-  background-color: #243447;
 }
