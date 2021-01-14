@@ -26,8 +26,8 @@ label {
     width: 20%;
     font-weight: bold;
     display: inline-block;
-    text-align: center;
 }
+
 input {
     width: 78%;
     background-color: #141d26;
