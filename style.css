@@ -32,6 +32,7 @@ input {
     width: 78%;
     background-color: #141d26;
     color: white;
+    border: 0;
 }
 #accenti {
   width: 2%;   
