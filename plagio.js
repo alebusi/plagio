@@ -1,5 +1,15 @@
 ind = 0;
 
+var spreadsheetID = "1crcNoslrLEwIsvLCKMl7ZYjesNYDcibVt0PQQzylZf0";
+var url = "https://spreadsheets.google.com/feeds/list/" + spreadsheetID + "/1/public/values?alt=json";
+
+$.getJSON(url, function(data) {                   
+    for (var i = 0; i < data.feed.entry.length; i++) {
+      //alert(data.feed.entry[i].title.$t); //or whatever action of using the value
+      document.getElementById("risp"+(i+1)).innerHTML=data.feed.entry[i].title.$t;
+    };                 
+});
+
 function generaTesto() {
   risposte = ["risp0"];
   sequenza = [];
