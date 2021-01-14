@@ -4,10 +4,10 @@ var spreadsheetID = "1crcNoslrLEwIsvLCKMl7ZYjesNYDcibVt0PQQzylZf0";
 var url = "https://spreadsheets.google.com/feeds/list/" + spreadsheetID + "/1/public/values?alt=json";
 
 $.getJSON(url, function(data) {                   
-    //for (var i = 0; i < data.feed.entry.length; i++) {
-      document.getElementById("r1").innerHTML = data.feed.entry[0].title.$t;
+    for (var i = 0; i < data.feed.entry.length; i++) {
+      document.getElementById("r"+(i+1)).innerHTML = data.feed.entry[i].title.$t;
       //alert(data.feed.entry[i].title.$t); //or whatever action of using the value
-    //}        
+    }        
 });
 
 function generaTesto() {
