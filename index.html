@@ -3,7 +3,7 @@
     <meta charset="utf-8" />
     <title>plagio</title>
     <link rel="stylesheet" href="style.css">
-    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js">
+      <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 </head>
 <body>
   <form>
@@ -15,7 +15,7 @@
     <input type="text" id="incipit" name="incipit"><br><br>
     <label for="risp0">Corretta</label>
     <input type="text" id="risp0" name="risp0"><br><br>
-    <label for="risp1">Risp 1</label>
+    <label for="risp1"><span id="r1" class="abilita" onclick="onoff(this)">Risp 1</span></label>
     <input type="text" id="risp1" name="risp1"><br><br>
     <label for="risp2">Risp 2</label>
     <input type="text" id="risp2" name="risp2"><br><br>
@@ -35,16 +35,6 @@
     <input type="checkbox" id="accenti" name="accenti" checked>
     <button type="button" onclick="generaTesto()">Genera testo</button>
   </form>
-    <div id="container">
-    <div class="abilita" onclick="onoff(this)"></div>
-    <div class="abilita" onclick="onoff(this)"></div>
-    <div class="abilita" onclick="onoff(this)"></div>
-    <div class="abilita" onclick="onoff(this)"></div>
-    <div class="abilita" onclick="onoff(this)"></div>
-    <div class="abilita" onclick="onoff(this)"></div>
-    <div class="abilita" onclick="onoff(this)"></div>
-    <div class="abilita" onclick="onoff(this)"></div>
-  </div>
   <div id="istruzioni">
     <div>
        <ol>
