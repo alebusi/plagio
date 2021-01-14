@@ -8,12 +8,11 @@ html, body {
 }
 
 .abilita {
-  opacity: 0;
+  opacity: 1;
 }
 
 .disabilita {
-    opacity: 0.7;
-    background-color: #243447;
+    opacity: 0.3;
 }
 
 form {
