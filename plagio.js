@@ -3,11 +3,12 @@ ind = 0;
 var spreadsheetID = "1crcNoslrLEwIsvLCKMl7ZYjesNYDcibVt0PQQzylZf0";
 var url = "https://spreadsheets.google.com/feeds/list/" + spreadsheetID + "/1/public/values?alt=json";
 
+//setTimeout(function(){
 $.getJSON(url, function(data) {                   
-    for (var i = 0; i < data.feed.entry.length; i++) {
+    //for (var i = 0; i < data.feed.entry.length; i++) {
+      document.getElementById("r1").innerHTML = data.feed.entry[0].title.$t;
       //alert(data.feed.entry[i].title.$t); //or whatever action of using the value
-      document.getElementById("risp"+(i+1)).innerHTML=data.feed.entry[i].title.$t;
-    };                 
+    //}        
 });
 
 function generaTesto() {
@@ -55,13 +56,13 @@ function randomIntFromInterval(min,max) {
     return Math.floor(Math.random()*(max-min+1)+min);
 }
 
-function onoff(div) {
-  var className = div.getAttribute("class");
+function onoff(span) {
+  var className = span.getAttribute("class");
   if (className=="abilita") {
-     div.className = "disabilita";
+     span.className = "disabilita";
   }
   else {
-     div.className = "abilita";
+     span.className = "abilita";
   }
 }
 
