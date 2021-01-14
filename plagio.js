@@ -3,7 +3,6 @@ ind = 0;
 var spreadsheetID = "1crcNoslrLEwIsvLCKMl7ZYjesNYDcibVt0PQQzylZf0";
 var url = "https://spreadsheets.google.com/feeds/list/" + spreadsheetID + "/1/public/values?alt=json";
 
-//setTimeout(function(){
 $.getJSON(url, function(data) {                   
     //for (var i = 0; i < data.feed.entry.length; i++) {
       document.getElementById("r1").innerHTML = data.feed.entry[0].title.$t;
