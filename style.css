@@ -48,6 +48,7 @@ input {
     width: 35%;
     height: 75vh;
     position: absolute;
+    overflow: scroll;
 }
 
 #istruzioni {
