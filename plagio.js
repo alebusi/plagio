@@ -1,4 +1,5 @@
-ind = 0;
+var ind = 0;
+var colori = ["white","Cyan","#F1E0FF","yellow","red","lime","magenta","orange","LightSkyBlue"];
 
 var spreadsheetID = "1crcNoslrLEwIsvLCKMl7ZYjesNYDcibVt0PQQzylZf0";
 var url = "https://spreadsheets.google.com/feeds/list/" + spreadsheetID + "/1/public/values?alt=json";
@@ -6,40 +7,48 @@ var url = "https://spreadsheets.google.com/feeds/list/" + spreadsheetID + "/1/pu
 $.getJSON(url, function(data) {                   
     for (var i = 0; i < data.feed.entry.length; i++) {
       document.getElementById("r"+(i+1)).innerHTML = data.feed.entry[i].title.$t;
-      //alert(data.feed.entry[i].title.$t); //or whatever action of using the value
+      document.getElementById("r"+(i+1)).style.color=colori[i+1];
     }        
 });
 
 function generaTesto() {
+  //document.getElementById("testo").style.zIndex=0;
   risposte = ["risp0"];
   sequenza = [];
   ind=0;
   generaSequenza(); 
-  testo="Titolo del libro "+document.getElementById("titolo").value+"...<br>";
-  testo=testo+"Autore "+document.getElementById("autore").value+"...<br><br>";
+  testo="Titolo del libro "+document.getElementById("titolo").innerHTML+"...<br>";
+  testo=testo+"Autore "+document.getElementById("autore").innerHTML+"...<br><br>";
   testo=testo+"Ecco le proposte...<br>";
-  txtIncipit=document.getElementById("incipit").value;
+  txtIncipit=document.getElementById("incipit").innerHTML;
   for (x=0; x < sequenza.length; x++) {
-      testo=testo+(x+1)+": "+txtIncipit+" "+document.getElementById(sequenza[x]).value+"...<br>";
+      var str = sequenza[x].toString();
+      var colRisp = colori[str.substr(-1)];
+      var colorePos="<span style='color: "+colRisp+"'>"+(x+1)+"</span>";
+      testo=testo+colorePos+": "+txtIncipit+" "+document.getElementById(sequenza[x]).innerHTML+"...<br>";
   }
   testo=testo+"<br>Ripetiamo per i meno attenti...<br>";
-  testo=testo+document.getElementById("titolo").value+"...<br>";
-  testo=testo+"di "+document.getElementById("autore").value+"...<br>";
-  testo=testo+document.getElementById("incipit").value+"...<br>";
+  testo=testo+document.getElementById("titolo").innerHTML+"...<br>";
+  testo=testo+"di "+document.getElementById("autore").innerHTML+"...<br>";
+  testo=testo+document.getElementById("incipit").innerHTML+"...<br>";
   for (x=0; x < sequenza.length; x++) {
-      testo=testo+(x+1)+": "+document.getElementById(sequenza[x]).value+"...<br>";
+      var str = sequenza[x].toString();
+      var colRisp = colori[str.substr(-1)];
+      var colorePos="<span style='color: "+colRisp+"'>"+(x+1)+"</span>";
+      testo=testo+colorePos+": "+document.getElementById(sequenza[x]).innerHTML+"...<br>";
   }
   testo=testo+"Ora tocca a voi dare la risposta corretta!";
   if (document.getElementById("accenti").checked == true) {
      testo=sistemaTesto(testo);
   }
-  document.getElementById("testo").innerHTML = testo;
+  document.getElementById("completo").innerHTML = testo;
 }
 
 function generaSequenza() {
   x=0;
   for (i = 1; i < 9; i++) {
-    if (document.getElementById("risp"+i).value != "") {
+    var risposta = document.getElementById("risp"+i).innerHTML;
+    if (risposta.trim().length != 0) {
       x++; 
       risposte[x]="risp"+i;
     }
