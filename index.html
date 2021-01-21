@@ -6,53 +6,102 @@
       <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 </head>
 <body>
-  <form>
-    <label for="autore">Autore</label>
-    <input type="text" id="autore" name="autore"><br><br>
-    <label for="titolo">Titolo</label>
-    <input type="text" id="titolo" name="titolo"><br>
-    <label for="incipit">Incipit</label>
-    <input type="text" id="incipit" name="incipit"><br><br>
-    <label for="risp0">Corretta</label>
-    <input type="text" id="risp0" name="risp0"><br><br>
-     <label for="risp1"><span id="r1" class="abilita" onclick="onoff(this)">Risp 1</span></label>
-       <input type="text" id="risp1" name="risp1"><br><br>
-       
-    <label for="risp2"><span id="r2" class="abilita" onclick="onoff(this)">Risp 2</span></label>
-      <input type="text" id="risp2" name="risp2"><br><br>
-      
-    <label for="risp3"><span id="r3" class="abilita" onclick="onoff(this)">Risp 3</span></label>
-      <input type="text" id="risp3" name="risp3"><br><br>
-      
-    <label for="risp4"><span id="r4" class="abilita" onclick="onoff(this)">Risp 4</span></label>
-      <input type="text" id="risp4" name="risp4"><br><br>
-    
-    <label for="risp5"><span id="r5" class="abilita" onclick="onoff(this)">Risp 5</span></label>
-      <input type="text" id="risp5" name="risp5"><br><br>
-    
-    <label for="risp6"><span id="r6" class="abilita" onclick="onoff(this)">Risp 6</span></label>
-      <input type="text" id="risp6" name="risp6"><br><br>
-       
-    <label for="risp7"><span id="r7" class="abilita" onclick="onoff(this)">Risp 7</span></label>
-      <input type="text" id="risp7" name="risp7"><br><br>
+  <div id="modello">
 
-    <label for="risp8"><span id="r8" class="abilita" onclick="onoff(this)">Risp 8</span></label>
-      <input type="text" id="risp8" name="risp8"><br><br><br>
-    
-      <label for="accenti">Per Alexa</label>
-    <input type="checkbox" id="accenti" name="accenti" checked>
-    <button type="button" onclick="generaTesto()">Genera testo</button>
-  </form>
-  <div id="istruzioni">
-    <div>
-       <ol>
-        <li>Inserisci i giocatori a <a href="https://docs.google.com/spreadsheets/d/1crcNoslrLEwIsvLCKMl7ZYjesNYDcibVt0PQQzylZf0/edit?usp=sharing" target="_blank">questo link</a></li>
-        <li>Incolla <a href="https://docs.google.com/document/d/16CbLxt-lWdQyXTM9IVz_KBC1-7GmdpohtnG2ZzStn4w/edit?usp=sharing" target="_blank">qui</a> per Alexa oppure <a href="https://ttsreader.com" target="_blank">qui</a> per TTSReader</li>
-        <li>Verifica l'aggiornamento Alexa a <a href="https://docs.google.com/document/d/e/2PACX-1vTYZ7j14zvmea0tzkWS8wdm54-6gxHFMuATwkWe7xBjW_KvD8zOrKGVpErNOLbkV4d5jEzphBLLWT-u/pub" target="_blank">questo link</a></li>
-       </ol>
-    </div>
+  <div class="etichetta">Autore</div>
+  <div id="autore" class="campo" contenteditable="true">
   </div>
-  <div id="testo" contenteditable="true">Aspettando la generazione...</div>
-  <script src="plagio.js"></script>
+<br>
+
+  <div class="etichetta">Titolo</div>
+  <div id="titolo" class="campo" contenteditable="true">   
+  </div>
+<br>
+
+  <div class="etichetta">Incipit</div>
+  <div id="incipit" class="campo" contenteditable="true">
+  </div>
+<br>
+
+  <div class="etichetta">Corretta</div>
+  <div id="risp0" class="campo" contenteditable="true">
+  </div>
+<br>
+
+
+  <div class="etichetta"><span id="r1">XXX</span></div>
+  <div id="risp1" class="campo" contenteditable="true">
+  </div>
+<br>
+
+
+  <div class="etichetta"><span id="r2">XXX</span></div>
+  <div id="risp2" class="campo" contenteditable="true">
+  </div>
+<br>
+
+
+<div class="etichetta"><span id="r3">XXX</span></div>
+  <div id="risp3" class="campo" contenteditable="true">
+  </div>
+<br>
+
+
+  <div class="etichetta"><span id="r4">XXX</span></div>
+  <div id="risp4" class="campo" contenteditable="true">
+  </div>
+<br>
+
+<div class="etichetta"><span id="r5">XXX</span></div>
+  <div id="risp5" class="campo" contenteditable="true">
+  </div>
+<br>
+
+  <div class="etichetta"><span id="r6">XXX</span></div>
+  <div id="risp6" class="campo" contenteditable="true">
+  </div>
+<br>
+
+<div class="etichetta"><span id="r7">XXX</span></div>
+  <div id="risp7" class="campo" contenteditable="true">
+  </div>
+<br>
+
+  <div class="etichetta"><span id="r8">XXX</span></div>
+  <div id="risp8" class="campo" contenteditable="true">
+  </div>
+<br>
+<div class="etichetta">Per Alexa?
+</div>
+
+<div id="box" class="bottone"> <input type="checkbox" id="accenti" name="accenti" checked></div>
+<div id="genera" class="bottone" onclick="generaTesto()">Genera testo</div>
+</div>
+<div id="testo">
+   
+   <div id="completo" contenteditable="true">In attesa...</div>
+
+<div class="etichetta">
+     Incolla
+   </div>   
+
+<div class="bottone">
+     <a href="https://docs.google.com/document/d/16CbLxt-lWdQyXTM9IVz_KBC1-7GmdpohtnG2ZzStn4w/edit?usp=sharing" target="_blank">Alexa</a>
+   </div>
+
+   <div class="bottone">
+     <a href="https://ttsreader.com" target="_blank">TTS Reader</a>
+   </div><br>
+
+<div class="etichetta">
+     Modifica
+   </div>   
+
+<div class="bottone">
+     <a href="https://docs.google.com/spreadsheets/d/1crcNoslrLEwIsvLCKMl7ZYjesNYDcibVt0PQQzylZf0/edit?usp=sharing" target="_blank">Lista giocatori</ahref>
+   </div>
+
+</div>
+<script src="plagio.js"></script>
 </body>
 </html>
