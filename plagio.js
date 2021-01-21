@@ -1,5 +1,5 @@
 var ind = 0;
-var colori = ["white","Cyan","#F1E0FF","yellow","red","lime","magenta","orange","LightSkyBlue"];
+var colori = ["white","Cyan","DarkSalmon","yellow","red","lime","magenta","orange","LightSkyBlue"];
 
 var spreadsheetID = "1crcNoslrLEwIsvLCKMl7ZYjesNYDcibVt0PQQzylZf0";
 var url = "https://spreadsheets.google.com/feeds/list/" + spreadsheetID + "/1/public/values?alt=json";
