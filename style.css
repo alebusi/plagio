@@ -3,59 +3,74 @@ html, body {
     padding: 0;
     height: 100%;
     font-family: Helvetica,Arial,Sanserif;
-    background: #243447;
+    background: grey;
     color: white;
 }
 
-.abilita {
-  opacity: 1;
+.campo {
+width: 300px;
+background-color: #404040;
 }
 
-.disabilita {
-    opacity: 0.3;
+.etichetta {
+margin-left: 30px;
+width: 100px;
 }
 
-form {
-    top: 40px;
-    left: 5%;
-    width: 50%;
-    position: absolute;
+#modello {
+display: inline-block;
+margin: 10px;
+width: 480px;
+background-color: black;
+position: relative;
+padding-bottom: 30px;
+padding-top: 20px;
 }
 
-label {
-    width: 20%;
-    font-weight: bold;
-    display: inline-block;
+
+#genera {
+float:right;
+margin-right: 30px;
 }
 
-input {
-    width: 78%;
-    background-color: #141d26;
-    color: white;
-    border: 0;
-}
-#accenti {
-  width: 2%;   
+.bottone {
+background-color: #ff8c00;
 }
 
-#titolo, #risp0 {
-  margin-bottom: 30px;
-} 
+.bottone:hover {
+background-color: orange;
+cursor: pointer;
+}
+
+.campo, .etichetta, .bottone {
+padding: 5px;
+margin-top: 10px;
+display: inline-block;
+}
+
+#titolo,  #risp0, #risp8 {
+margin-bottom:20px;
+}
+
 
 #testo {
-    top: 40px;
-    left: 60%;
-    width: 35%;
-    height: 75vh;
-    position: absolute;
-    overflow: scroll;
+display: inline-block;
+width: 480px;
+position: relative;
+background-color: black;
+color: white;
+padding-bottom: 30px;
+margin: 10px;
+padding-top: 30px; 
 }
 
-#istruzioni {
-    top: 85vh;
-    left: 60%;
-    position: absolute;
+#completo {
+width: 420px;
+margin-left: 30px;
+margin-bottom: 20px;
 }
+
 a {
-    color: orange;
+  color: white;
+  text-decoration: none;
 }
