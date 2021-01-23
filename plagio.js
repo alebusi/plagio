@@ -64,13 +64,13 @@ function randomIntFromInterval(min,max) {
     return Math.floor(Math.random()*(max-min+1)+min);
 }
 
-function onoff(span) {
-  var className = span.getAttribute("class");
-  if (className=="abilita") {
-     span.className = "disabilita";
+function onoff(div) {
+  var className = div.getAttribute("class");
+  if (className=="etichetta") {
+     div.className = "riposo";
   }
   else {
-     span.className = "abilita";
+     div.className = "etichetta";
   }
 }
 
