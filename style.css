@@ -1,3 +1,4 @@
+ 
 html, body {
     margin: 0;
     padding: 0;
@@ -16,6 +17,12 @@ background-color: #404040;
 margin-left: 30px;
 width: 100px;
 }
+
+.riposo {
+margin-left: 30px;
+width: 80px;
+border-right: solid 20px white;
+} 
 
 #modello {
 display: inline-block;
@@ -42,7 +49,7 @@ background-color: orange;
 cursor: pointer;
 }
 
-.campo, .etichetta, .bottone {
+.campo, .etichetta, .bottone, .riposo {
 padding: 5px;
 margin-top: 10px;
 display: inline-block;
@@ -73,4 +80,10 @@ margin-bottom: 20px;
 a {
   color: white;
   text-decoration: none;
+}
+
+#giocatori .etichetta:hover, .riposo:hover {
+width: 80px;
+border-right: solid 20px grey;
+cursor: pointer;
 }
