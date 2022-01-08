@@ -10,7 +10,7 @@ var api_key = "AIzaSyBcrsTED6onwU-aKRLom06W_LuQJvLd2xw";
 
 var url = 'https://sheets.googleapis.com/v4/spreadsheets/' +
            spreadsheetID + '/values/' + tab_name +
-           '?alt=json&key=' + api_key;
+           '!A2:A9?alt=json&key=' + api_key;
 
 $.getJSON(url, function(data) {
     for (var i = 0; i < data.values.length; i++) {
