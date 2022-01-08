@@ -96,6 +96,5 @@ function sistemaTesto(testo) {
   testo = testo.replace(/ò/ig,"oh");
   testo = testo.replace(/è/ig,"eh");
   testo = testo.replace(/é/ig,"eh");
-  testo = testo.replace(/\n/g," ");
   return testo;
 }
