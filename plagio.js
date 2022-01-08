@@ -12,13 +12,20 @@ var url = 'https://sheets.googleapis.com/v4/spreadsheets/' +
            spreadsheetID + '/values/' + tab_name +
            '?alt=json&key=' + api_key;
 
+$.getJSON(url, function(data) {
+    for (var i = 0; i < data.values.length; i++) {
+      document.getElementById("r"+(i+1)).innerHTML = data.values[i];
+      document.getElementById("r"+(i+1)).style.color=colori[i+1];
+    }        
+});
+/*
 $.getJSON(url, function(data) {                   
     for (var i = 0; i < data.feed.entry.length; i++) {
       document.getElementById("r"+(i+1)).innerHTML = data.feed.entry[i].title.$t;
       document.getElementById("r"+(i+1)).style.color=colori[i+1];
     }        
 });
-
+*/
 function generaTesto() {
   //document.getElementById("testo").style.zIndex=0;
   risposte = ["risp0"];
