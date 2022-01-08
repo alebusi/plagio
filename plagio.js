@@ -2,7 +2,15 @@ var ind = 0;
 var colori = ["white","Cyan","magenta","yellow","red","lime","Pink","orange","LightSkyBlue"];
 
 var spreadsheetID = "1crcNoslrLEwIsvLCKMl7ZYjesNYDcibVt0PQQzylZf0";
-var url = "https://spreadsheets.google.com/feeds/list/" + spreadsheetID + "/1/public/values?alt=json";
+var tab_name = "giocatori";
+var api_key = "AIzaSyBcrsTED6onwU-aKRLom06W_LuQJvLd2xw";
+
+//var url = "https://spreadsheets.google.com/feeds/list/" + spreadsheetID + "/1/public/values?alt=json";
+//var url = "https://sheets.googleapis.com/v4/spreadsheets/" + spreadsheetID + "/values/Sheet1!A1:A8?alt=json";
+
+var url = 'https://sheets.googleapis.com/v4/spreadsheets/' +
+           spreadsheetID + '/values/' + tab_name +
+           '?alt=json&key=' + api_key;
 
 $.getJSON(url, function(data) {                   
     for (var i = 0; i < data.feed.entry.length; i++) {
